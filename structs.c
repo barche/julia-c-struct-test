@@ -2,13 +2,13 @@
 
 struct OneWrappedInt
 {
-  int x;
+  double x;
 };
 
 struct TwoWrappedInts
 {
-  int x;
-  int y;
+  double x;
+  double y;
 };
 
 #ifdef _WIN32
@@ -19,10 +19,10 @@ struct TwoWrappedInts
 
 DLL_EXPORT void print_one(struct OneWrappedInt x)
 {
-  printf("%d\n", x.x);
+  printf("%f\n", x.x);
 }
 
 DLL_EXPORT void print_two(struct TwoWrappedInts x)
 {
-  printf("%d %d\n", x.x, x.y);
+  printf("%f %f\n", x.x, x.y);
 }
