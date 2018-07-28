@@ -8,8 +8,8 @@ sources = [
 # Bash recipe for building across all platforms
 buildscript = """
     cd \$WORKSPACE/srcdir/julia-c-struct-test*
-    mkdir \${prefix}/lib
-    /opt/x86_64-w64-mingw32/bin/x86_64-w64-mingw32-gcc --shared -o \${prefix}/lib/structs.dll structs.c
+    mkdir \${prefix}/bin
+    /opt/x86_64-w64-mingw32/bin/x86_64-w64-mingw32-gcc --shared -o \${prefix}/bin/structs.dll structs.c
     """
 
 # These are the platforms we will build for by default, unless further
