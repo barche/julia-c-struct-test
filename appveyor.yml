@@ -23,7 +23,7 @@ install:
   - C:\projects\julia-binary.exe /S /D=C:\projects\julia
 
 build_script:
-  - ps: Start-FileDownload 'https://github.com/barche/julia-c-struct-test/releases/download/v1.0/structs.v1.0.0.x86_64-w64-mingw32.tar.gz'
+  - ps: Start-FileDownload 'https://github.com/barche/julia-c-struct-test/releases/download/v2.0/structs.v1.0.0.x86_64-w64-mingw32.tar.gz'
   - tar --strip-components=2 -xvzf structs.v1.0.0.x86_64-w64-mingw32.tar.gz
 
 test_script:
